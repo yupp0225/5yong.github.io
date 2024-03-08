@@ -1,0 +1,13 @@
+.sk-left li {
+    float: left;
+    padding-right: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.sk-center li {
+    float: left;
+    padding-right: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}

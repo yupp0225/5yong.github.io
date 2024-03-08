@@ -1,0 +1,392 @@
+/* 吧标签的内外间距清零 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 吧em和i斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉li的小圆点 */
+li {
+    list-style: none;
+}
+
+/* border是照顾低版本，vertical取消图片底册有空白的问题 */
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/* 当我们鼠标经过button时候 鼠标变成手指 */
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0px;
+    outline: none;
+    /* 这个是点击后去掉蓝色边框 */
+}
+
+/* 设置整体大小 */
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+/* .clearfix {
+    * zoom: 1;
+}
+ */
+/* 1111111111111111111111111111111nav开始 */
+.nav {
+    height: 46px;
+    border-bottom: 2px solid #c81623;
+}
+
+.nav-left .dt {
+    height: 46px;
+    width: 208px;
+    background-color: #c81623;
+    line-height: 46px;
+    text-align: center;
+
+
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left .dt {
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.nav-left .dd {
+    width: 208px;
+    height: 465px;
+    background-color: #c81623;
+
+}
+
+.nav-left .dd a i {
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    padding-right: 10px;
+}
+
+.dd li {
+    height: 32px;
+    line-height: 32px;
+    margin-left: 1px;
+    padding-left: 10px;
+
+
+}
+
+.dd li:hover {
+    background-color: #fff;
+    color: #c81623;
+}
+
+.dd li:hover a {
+    color: #c81623;
+}
+
+.dd li a {
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.nav-center li {
+    display: inline-block;
+    padding-left: 40px;
+    line-height: 46px;
+    font-size: 16px;
+}
+
+/* 111111111111111111111111111111111111轮播图开始 */
+.main {
+    height: 455px;
+    width: 980px;
+    /* background-color: aliceblue; */
+    margin-left: 220px;
+    margin-top: 8px;
+}
+
+.main-left {
+    height: 455px;
+    width: 720px;
+    /* background-color: antiquewhite; */
+    float: left;
+}
+
+.main-right {
+    height: 455px;
+    width: 260px;
+    /* background-color: aqua; */
+    float: right;
+}
+
+.main-right .news {
+    height: 451px;
+    width: 250px;
+    /* background-color:aquamarine; */
+    float: right;
+    border: 1px solid darkgray;
+}
+
+.news-top {
+    /* display: inline-block; */
+    height: 164px;
+    width: 250px;
+
+    border-bottom: 1px solid darkgray;
+}
+
+.news-top .more {
+    height: 36px;
+    border-bottom: 1px solid darkgray;
+    padding-left: 10px;
+    line-height: 36px;
+
+}
+
+.news-top h3 {
+    float: left;
+}
+
+.news-top .more a {
+    float: right;
+    padding-right: 20px;
+}
+
+.news-top .notice {
+    height: 125px;
+    /* background-color: #c81623; */
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+.notice a {
+    float: left;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.news-center {
+    height: 210px;
+    width: 250px;
+    /* border-bottom: 1px solid darkgray; */
+    overflow: hidden;
+}
+
+.news-center ul {
+    width: 252px;
+}
+
+
+
+.news-center li {
+    height: 69px;
+    width: 62px;
+    /* background-color: aqua; */
+    border-right: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    background: url(/品优购/images/icons.png) 4px 5px;
+    float: left;
+    text-align: center;
+}
+
+.news-last {
+    width: 250px;
+    height: 75px;
+    background: url(/品优购/images/ad.jpg) no-repeat;
+    margin-top: 4px;
+    /* margin-left: 1px; */
+}
+
+/* 11111111111111111111111今日推荐recommend开始 */
+.recommend {
+    height: 165px;
+    /* background-color: antiquewhite; */
+    margin-top: 10px;
+    width: 1200px;
+}
+
+.recommend-left {
+    float: left;
+    width: 204px;
+    height: 100%;
+    background-color: #666;
+    /* 在父亲设置textalign center 图片就能居中 */
+    text-align: center;
+}
+
+.recommend-left p {
+    color: #fff;
+    /* text-align: center; */
+    font-size: 18px;
+}
+
+.recommend-left img {
+    margin-top: 30px;
+}
+
+.recommend-right li {
+    float: left;
+    border-right: 1px solid #666;
+}
+
+/* 11111111111111猜你喜欢模块 */
+.like {
+    height: 280px;
+    /* background-color: antiquewhite; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.like-top {
+    height: 50px;
+    /* background-color: aquamarine; */
+}
+
+.like-top h3 {
+    float: left;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.like-top a {
+    float: right;
+    padding-right: 10px;
+}
+
+.like-bottom {
+    height: 230px;
+    /* background-color: aqua; */
+    border: 2px solid darkgray;
+}
+
+.bottom-div {
+    width: 199px;
+    height: 230px;
+    /* background-color: aqua; */
+    /* display: inline-block; */
+    float: left;
+}
+
+.bottom-img {
+    height: 160px;
+    /* background-color: aquamarine; */
+    line-height: 160px;
+    text-align: center;
+}
+
+.bottom-describe {
+    height: 65px;
+    /* background-color: bisque; */
+
+    width: 159px;
+    padding: 0 20px;
+    border-right: 1px solid darkgray;
+}
+
+.bottom-describe p {
+    font-size: 18px;
+    color: red;
+}
+
+.appliance-top {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+    /* background-color: #666; */
+}
+
+.appliance-top h3 {
+    color: #c81623;
+    font-size: 20px;
+    float: left;
+
+
+}
+
+.appliance-top li {
+    float: left;
+    border-right: 1px solid #666;
+    padding: 0 20px;
+    /* display: inline-block; */
+}
+
+.appliance-top-list {
+    float: right;
+}
+
+.appliance-bottom {
+    height: 361px;
+    background-color: antiquewhite;
+}
+
+.content-one>div {
+    float: left;
+}
+
+.content-one .one {
+    width: 221px;
+    background-color: aliceblue;
+    height: 361px;
+
+}
+
+.content-one .one li {
+    float: left;
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #dbd5d5;
+}
+
+.content-one .one a img {
+    /* line-height: 190px; */
+    margin-top: 60px;
+    margin-left: 30px;
+}
